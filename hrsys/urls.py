@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include(frontend_urls)),
     url('^$', generic.RedirectView.as_view(url='/employees/'),),
+    url(r'^', include('snippets.urls')),
 ]
